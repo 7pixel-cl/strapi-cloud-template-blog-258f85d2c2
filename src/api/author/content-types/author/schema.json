@@ -24,6 +24,9 @@
     "email": {
       "type": "string"
     },
+    "role": {
+      "type": "string"
+    },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",

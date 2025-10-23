@@ -17,7 +17,7 @@
     },
     "description": {
       "type": "text",
-      "maxLength": 80
+      "maxLength": 500
     },
     "slug": {
       "type": "uid",
@@ -44,6 +44,25 @@
     "blocks": {
       "type": "dynamiczone",
       "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+    },
+    "publishDate": {
+      "type": "date"
+    },
+    "readTime": {
+      "type": "integer",
+      "min": 1,
+      "default": 3
+    },
+    "cardImageAlt": {
+      "type": "string"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": ["es", "en"],
+      "default": "es"
+    },
+    "tags": {
+      "type": "json"
     }
   }
 }

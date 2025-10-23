@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_heros",
+  "info": {
+    "singularName": "homepage-hero",
+    "pluralName": "homepage-heros",
+    "displayName": "Homepage Hero",
+    "description": "Main hero section content for the homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "richtext",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "primaryButtonText": {
+      "type": "string",
+      "required": true
+    },
+    "primaryButtonURL": {
+      "type": "string",
+      "required": true
+    },
+    "secondaryButtonText": {
+      "type": "string"
+    },
+    "secondaryButtonURL": {
+      "type": "string"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "heroImageAlt": {
+      "type": "string",
+      "required": true
+    },
+    "ratingText": {
+      "type": "richtext"
+    },
+    "reviewsText": {
+      "type": "richtext"
+    },
+    "avatars": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "showReviewSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "starCount": {
+      "type": "integer",
+      "default": 5,
+      "min": 0,
+      "max": 5
+    }
+  }
+}
