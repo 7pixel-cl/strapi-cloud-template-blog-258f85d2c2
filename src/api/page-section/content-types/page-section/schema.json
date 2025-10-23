@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_sections",
+  "info": {
+    "singularName": "page-section",
+    "pluralName": "page-sections",
+    "displayName": "Page Section",
+    "description": "Reusable content sections for different pages"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "page": {
+      "type": "enumeration",
+      "enum": ["nosotros", "academico", "admision", "servicios"],
+      "required": true
+    },
+    "isRightSection": {
+      "type": "boolean",
+      "default": false
+    },
+    "single": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "imageOne": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "imageOneAlt": {
+      "type": "string"
+    },
+    "imageTwo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "imageTwoAlt": {
+      "type": "string"
+    },
+    "buttonExists": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonTitle": {
+      "type": "string"
+    },
+    "buttonURL": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
