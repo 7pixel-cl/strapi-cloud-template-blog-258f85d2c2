@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_property_feature_items",
+  "info": {
+    "displayName": "Property Feature",
+    "description": "A single feature item for a property (interior, exterior, value, or efficiency)"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
